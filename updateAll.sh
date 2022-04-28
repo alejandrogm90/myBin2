@@ -18,6 +18,8 @@ showScriptInfo
 
 MYBIN2_LOCATION="${DIR_HOME}/bin"
 
+git pull --recurse-submodules
+
 if [ $# -eq 1 ] && [ "$1" == "clean" ] ; then
     rm ${MYBIN2_LOCATION}/*
     echo "" > ${MYBIN2_LOCATION}/.gitkeep
