@@ -26,5 +26,7 @@ else
     cp -f "${DIR_HOME}/ssh_examples/scripts/"*.sh "${MYBIN2_LOCATION}/"
     echo "Copying Python3 examples"
     cp -f "${DIR_HOME}/python3_examples/"*.py "${MYBIN2_LOCATION}/"
-    if [ -f "${MYBIN2_LOCATION}/__init__.py" ] ; then rm "${MYBIN2_LOCATION}/__init__.py" ; fi
+
+    # Add execution permissions
+    chmod +x ${MYBIN2_LOCATION}/*
 fi
