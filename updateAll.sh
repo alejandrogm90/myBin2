@@ -1,5 +1,9 @@
 #!/bin/bash
 
+git submodule sync
+git submodule update --init --recursive
+#git pull --recurse-submodules
+
 # VARIABLES Y FUNCONES
 DIR_HOME=$(cd `dirname $0` && pwd)
 source "${DIR_HOME}/ssh_examples/scripts/commonFunctions.sh"
@@ -17,8 +21,6 @@ export script_info=(
 showScriptInfo
 
 MYBIN2_LOCATION="${DIR_HOME}/bin"
-
-git pull --recurse-submodules
 
 if [ $# -eq 1 ] && [ "$1" == "clean" ] ; then
     rm ${MYBIN2_LOCATION}/*
