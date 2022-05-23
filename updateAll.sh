@@ -1,9 +1,5 @@
 #!/bin/bash
 
-git submodule sync
-git submodule update --init --recursive
-#git pull --recurse-submodules
-
 # VARIABLES Y FUNCONES
 DIR_HOME=$(cd `dirname $0` && pwd)
 source "${DIR_HOME}/ssh_examples/scripts/commonFunctions.sh"
@@ -22,15 +18,21 @@ showScriptInfo
 
 MYBIN2_LOCATION="${DIR_HOME}/bin"
 
-if [ $# -eq 1 ] && [ "$1" == "clean" ] ; then
+if [ $# -eq 1 ] && [ "$1" == "submodules" ] ; then
+    git submodule sync
+    git submodule update --init --recursive
+    git pull --recurse-submodules
+elif [ $# -eq 1 ] && [ "$1" == "clean" ] ; then
     rm ${MYBIN2_LOCATION}/*
-    echo "" > ${MYBIN2_LOCATION}/.gitkeep
-else
-    echo "Copying SSH examples"
-    cp -f "${DIR_HOME}/ssh_examples/scripts/"*.sh "${MYBIN2_LOCATION}/"
-    echo "Copying Python3 examples"
-    cp -f "${DIR_HOME}/python3_examples/"*.py "${MYBIN2_LOCATION}/"
-
-    # Add execution permissions
-    chmod +x ${MYBIN2_LOCATION}/*
+    echo "" > ${MYBIN2_LOCATION}/.gitkeep 
 fi
+
+# Copy all files
+echo "Copying SSH examples"
+cp -f "${DIR_HOME}/ssh_examples/scripts/"*.sh "${MYBIN2_LOCATION}/"
+echo "Copying Python3 examples"
+cp -f "${DIR_HOME}/python3_examples/"*.py "${MYBIN2_LOCATION}/"
+
+# Add execution permissions
+chmod +x ${MYBIN2_LOCATION}/*
+
