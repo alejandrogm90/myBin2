@@ -2,6 +2,16 @@
 
 # VARIABLES Y FUNCONES
 DIR_HOME=$(cd `dirname $0` && pwd)
+
+if [ -f "${DIR_HOME}/ssh_examples/scripts/commonFunctions.sh" ] ; then
+    git submodule sync
+    git submodule update --init --recursive
+    git pull --recurse-submodules
+else 
+    git submodule sync
+    git submodule update --init --recursive
+fi
+
 source "${DIR_HOME}/ssh_examples/scripts/commonFunctions.sh"
 SCRIPT_NAME=`getJustStriptName $0`
 export LOG_FILE="current_log"
@@ -18,11 +28,7 @@ showScriptInfo
 
 MYBIN2_LOCATION="${DIR_HOME}/bin"
 
-if [ $# -eq 1 ] && [ "$1" == "submodules" ] ; then
-    git submodule sync
-    git submodule update --init --recursive
-    git pull --recurse-submodules
-elif [ $# -eq 1 ] && [ "$1" == "clean" ] ; then
+if [ $# -eq 1 ] && [ "$1" == "clean" ] ; then
     rm ${MYBIN2_LOCATION}/*
     echo "" > ${MYBIN2_LOCATION}/.gitkeep 
 fi
