@@ -10,7 +10,7 @@ source "${DIR_HOME}/ssh_examples/scripts/commonFunctions.sh"
 SCRIPT_NAME=`getJustStriptName $0`
 MYBIN2_LOCATION="${DIR_HOME}/bin"
 REPO_1="${DIR_HOME}/python3_examples"
-REP2_2="${DIR_HOME}/ssh_examples"
+REPO_2="${DIR_HOME}/ssh_examples"
 export LOG_FILE="current_log"
 declare -A script_info
 export script_info=(
@@ -22,12 +22,15 @@ export script_info=(
 
 showScriptInfo
 
+function updateRepo {
+    cd "$1"
+    git pull "$2" main
+    cd "${DIR_HOME}"
+}
+
 # Update
-cd $REPO_1
-git pull https://github.com/alejandrogm90/python3_examples
-cd $REPO_2
-git pull https://github.com/alejandrogm90/ssh_examples
-cd $DIR_HOME
+updateRepo "${REPO_1}" "https://github.com/alejandrogm90/python3_examples"
+updateRepo "${REPO_2}" "https://github.com/alejandrogm90/ssh_examples"
 
 if [ $# -eq 1 ] && [ "$1" == "clean" ] ; then
     rm ${MYBIN2_LOCATION}/*
