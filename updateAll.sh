@@ -1,21 +1,17 @@
 #!/bin/bash
 
+git submodule sync
+git submodule update --init --recursive
+git pull --recurse-submodules
+
 # VARIABLES Y FUNCONES
 DIR_HOME=$(cd `dirname $0` && pwd)
-
-if [ -f "${DIR_HOME}/ssh_examples/scripts/commonFunctions.sh" ] ; then
-    git submodule sync
-    git submodule update --init --recursive
-    git pull --recurse-submodules
-else 
-    git submodule sync
-    git submodule update --init --recursive
-fi
-
 source "${DIR_HOME}/ssh_examples/scripts/commonFunctions.sh"
 SCRIPT_NAME=`getJustStriptName $0`
+MYBIN2_LOCATION="${DIR_HOME}/bin"
+REPO_1="${DIR_HOME}/python3_examples"
+REP2_2="${DIR_HOME}/ssh_examples"
 export LOG_FILE="current_log"
-
 declare -A script_info
 export script_info=(
 	[name]="${SCRIPT_NAME}" 
@@ -26,7 +22,12 @@ export script_info=(
 
 showScriptInfo
 
-MYBIN2_LOCATION="${DIR_HOME}/bin"
+# Update
+cd $REPO_1
+git pull https://github.com/alejandrogm90/python3_examples
+cd $REPO_2
+git pull https://github.com/alejandrogm90/ssh_examples
+cd $DIR_HOME
 
 if [ $# -eq 1 ] && [ "$1" == "clean" ] ; then
     rm ${MYBIN2_LOCATION}/*
