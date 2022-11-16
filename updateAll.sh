@@ -31,4 +31,4 @@ cp -f "${DIR_HOME}/python3_examples/"*.py "${MYBIN2_LOCATION}/"
 cp -f "${DIR_HOME}/python3_examples/"*.conf "${MYBIN2_LOCATION}/"
 
 # Add execution permissions
-chmod +x ${MYBIN2_LOCATION}/*
+chmod +x ${MYBIN2_LOCATION}/*.sh
