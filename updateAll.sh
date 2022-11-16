@@ -4,7 +4,6 @@ git submodule sync
 git submodule update --init --recursive
 git submodule update --remote --merge
 
-
 # VARIABLES Y FUNCONES
 DIR_HOME=$(cd `dirname $0` && pwd)
 source "${DIR_HOME}/ssh_examples/scripts/commonFunctions.sh"
