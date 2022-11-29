@@ -1,3 +1,10 @@
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![License][license-shield]][license-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
+
 # myBin2
 It's a "bin" directory where I store very useful little scripts. Why does myBIN exist?:
  - Because it is an easy way to use and store my own scripts.
@@ -11,7 +18,15 @@ Have a Linux OS or Mac OS:
  - python3.
 
 ## Post-discharge ##
-Unzip the "bin" directory to "~/bin". This together with the previous steps will allow you to launch these scripts from your terminal at any time.
+Add "bin" directory to "~/bin", as link.
+
+```sh
+ln -s $PROJECT_PAHT/bin ~/bin
+```
+
+This together with the previous steps will allow you to launch these scripts from your terminal at any time.
+
+
 
 ## Bibliography ##
 - Linux [Official Website](https://www.linux.org/)
@@ -22,3 +37,17 @@ Unzip the "bin" directory to "~/bin". This together with the previous steps will
 
 ## License ##
 * GNU V3 (see `LICENSE` for details)
+
+[contributors-shield]: https://img.shields.io/github/contributors/alejandrogm90/myBin2.svg?style=for-the-badge
+[forks-shield]: https://img.shields.io/github/forks/alejandrogm90/myBin2.svg?style=for-the-badge
+[stars-shield]: https://img.shields.io/github/stars/alejandrogm90/myBin2.svg?style=for-the-badge
+[issues-shield]: https://img.shields.io/github/issues/alejandrogm90/myBin2.svg?style=for-the-badge
+[license-shield]: https://img.shields.io/github/license/alejandrogm90/myBin2.svg?style=for-the-badge
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+
+[contributors-url]: https://github.com/alejandrogm90/myBin2/graphs/contributors
+[forks-url]: https://github.com/alejandrogm90/myBin2/network/members
+[stars-url]: https://github.com/alejandrogm90/myBin2/stargazers
+[issues-url]: https://github.com/alejandrogm90/myBin2/issues
+[license-url]: https://github.com/alejandrogm90/myBin2/blob/master/LICENSE.txt
+[linkedin-url]: https://www.linkedin.com/in/alejandro-g-762869129/
