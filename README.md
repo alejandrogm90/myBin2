@@ -18,6 +18,7 @@ Have a Linux OS or Mac OS:
  - python3.
 
 ## Post-discharge ##
+
 Add "bin" directory to "~/bin", as link.
 
 ```sh
@@ -26,7 +27,11 @@ ln -s $PROJECT_PAHT/bin ~/bin
 
 This together with the previous steps will allow you to launch these scripts from your terminal at any time.
 
+Now keep the last version of both repos. When you are in myBin2 directory, use these script:
 
+```sh
+./updateAll.sh
+```
 
 ## Bibliography ##
 - Linux [Official Website](https://www.linux.org/)
