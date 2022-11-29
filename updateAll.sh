@@ -23,10 +23,10 @@ showScriptInfo
 
 # Copy all files
 echo "Copying SSH examples"
-cp -f "${DIR_HOME}/ssh_examples/scripts/*.sh" "${MYBIN2_LOCATION}/"
+cp -f "${DIR_HOME}/ssh_examples/scripts/"*.sh "${MYBIN2_LOCATION}/"
 echo "Copying Python3 examples"
-cp -f "${DIR_HOME}/python3_examples/scripts/*.py" "${MYBIN2_LOCATION}/"
-cp -f "${DIR_HOME}/python3_examples/*.conf" "${MYBIN2_LOCATION}/"
+cp -f "${DIR_HOME}/python3_examples/scripts/"*.py "${MYBIN2_LOCATION}/"
+cp -f "${DIR_HOME}/python3_examples/"*.conf "${MYBIN2_LOCATION}/"
 
 # Add execution permissions
 chmod +x ${MYBIN2_LOCATION}/*.sh
