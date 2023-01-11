@@ -12,6 +12,10 @@ It's a "bin" directory where I store very useful little scripts. Why does myBIN 
  - Because this way these scripts can be improved, the base of others or help to create new ones.
 
 ## Pre requirements ##
+Read about submodules first:
+ - python3_examples [Official Website](https://github.com/alejandrogm90/python3_examples/)
+ - ssh_examples [Official Website](hhttps://github.com/alejandrogm90/ssh_examples/)
+
 Have a Linux OS or Mac OS:
  - You must copy or link the folder "bin" in your home so that it remains "$HOME/bin" .
  - If this line ( PATH="$HOME/bin:$PATH" ) does not exist in your "~/.profile" file, add it.
