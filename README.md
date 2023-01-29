@@ -12,12 +12,17 @@ It's a "bin" directory where I store very useful little scripts. Why does myBIN 
  - Because this way these scripts can be improved, the base of others or help to create new ones.
 
 ## Pre requirements ##
+Read about submodules first:
+ - python3_examples [Official Website](https://github.com/alejandrogm90/python3_examples/)
+ - ssh_examples [Official Website](hhttps://github.com/alejandrogm90/ssh_examples/)
+
 Have a Linux OS or Mac OS:
  - You must copy or link the folder "bin" in your home so that it remains "$HOME/bin" .
  - If this line ( PATH="$HOME/bin:$PATH" ) does not exist in your "~/.profile" file, add it.
  - python3.
 
 ## Post-discharge ##
+
 Add "bin" directory to "~/bin", as link.
 
 ```sh
@@ -26,7 +31,11 @@ ln -s $PROJECT_PAHT/bin ~/bin
 
 This together with the previous steps will allow you to launch these scripts from your terminal at any time.
 
+Now keep the last version of both repos. When you are in myBin2 directory, use these script:
 
+```sh
+./updateAll.sh
+```
 
 ## Bibliography ##
 - Linux [Official Website](https://www.linux.org/)
