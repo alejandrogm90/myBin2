@@ -1,12 +1,12 @@
 #!/bin/bash
 
 git submodule sync
-git submodule update --init --recursive
-git submodule update --remote --merge
+#git submodule update --init --recursive
+#git submodule update --remote --merge
 
 # VARIABLES Y FUNCONES
 DIR_HOME=$(cd `dirname $0` && pwd)
-source "${DIR_HOME}/ssh_examples/scripts/commonFunctions.sh"
+source "${DIR_HOME}/sh_examples/scripts/commonFunctions.sh"
 SCRIPT_NAME=`getJustStriptName $0`
 MYBIN2_LOCATION="${DIR_HOME}/bin"
 export LOG_FILE="${SCRIPT_NAME}_`date +%F`.log"
@@ -23,7 +23,7 @@ showScriptInfo
 
 # Copy all files
 echo "Copying SSH examples"
-cp -f "${DIR_HOME}/ssh_examples/scripts/"*.sh "${MYBIN2_LOCATION}/"
+cp -f "${DIR_HOME}/sh_examples/scripts/"*.sh "${MYBIN2_LOCATION}/"
 echo "Copying Python3 examples"
 cp -f "${DIR_HOME}/python3_examples/scripts/"*.py "${MYBIN2_LOCATION}/"
 cp -f "${DIR_HOME}/python3_examples/"*.conf "${MYBIN2_LOCATION}/"

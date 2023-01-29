@@ -1,3 +1,6 @@
 [submodule "python3_examples"]
 	path = python3_examples
 	url = https://github.com/alejandrogm90/python3_examples.git
+[submodule "sh_examples"]
+	path = sh_examples
+	url = https://github.com/alejandrogm90/sh_examples.git
