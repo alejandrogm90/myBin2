@@ -48,7 +48,7 @@ Now keep the last version of both repos. When you are in myBin2 directory, use t
 ## License ##
 * GNU V3 (see `LICENSE` for details)
 
-[version-shield]: https://img.shields.io/badge/version-1.0-blue
+[version-shield]: https://img.shields.io/badge/version-1.0-blue?style=for-the-badge
 [contributors-shield]: https://img.shields.io/github/contributors/alejandrogm90/myBin2.svg?style=for-the-badge
 [forks-shield]: https://img.shields.io/github/forks/alejandrogm90/myBin2.svg?style=for-the-badge
 [stars-shield]: https://img.shields.io/github/stars/alejandrogm90/myBin2.svg?style=for-the-badge
