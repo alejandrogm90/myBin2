@@ -1,16 +1,18 @@
 #!/bin/bash
 
+# Update GIT data
 git submodule sync
-#git submodule update --init --recursive
-#git submodule update --remote --merge
+git submodule update --init --recursive
+git submodule update --remote --merge
 
-# VARIABLES Y FUNCONES
+# Varables and functions
 DIR_HOME=$(cd `dirname $0` && pwd)
 source "${DIR_HOME}/sh_examples/scripts/commonFunctions.sh"
 SCRIPT_NAME=`getJustStriptName $0`
 MYBIN2_LOCATION="${DIR_HOME}/bin"
 export LOG_FILE="${SCRIPT_NAME}_`date +%F`.log"
 
+# Show basic script info
 declare -A script_info
 export script_info=(
 	[name]="${SCRIPT_NAME}" 
@@ -18,7 +20,6 @@ export script_info=(
 	[description]="Copy All new scripts" 
 	[calling]="./`getStriptName $0` yyyymmdd"
 )
-
 showScriptInfo
 
 # Copy all files
