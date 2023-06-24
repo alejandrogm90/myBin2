@@ -1,19 +1,3 @@
-[version-shield]: https://img.shields.io/badge/version-1.0-blue?style=for-the-badge
-[contributors-shield]: https://img.shields.io/github/contributors/alejandrogm90/myBin2.svg?style=for-the-badge
-[forks-shield]: https://img.shields.io/github/forks/alejandrogm90/myBin2.svg?style=for-the-badge
-[stars-shield]: https://img.shields.io/github/stars/alejandrogm90/myBin2.svg?style=for-the-badge
-[issues-shield]: https://img.shields.io/github/issues/alejandrogm90/myBin2.svg?style=for-the-badge
-[license-shield]: https://img.shields.io/github/license/alejandrogm90/myBin2.svg?style=for-the-badge
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-
-[version-url]: https://github.com/alejandrogm90/myBin2/
-[contributors-url]: https://github.com/alejandrogm90/myBin2/graphs/contributors
-[forks-url]: https://github.com/alejandrogm90/myBin2/network/members
-[stars-url]: https://github.com/alejandrogm90/myBin2/stargazers
-[issues-url]: https://github.com/alejandrogm90/myBin2/issues
-[license-url]: https://github.com/alejandrogm90/myBin2/blob/master/LICENSE.txt
-[linkedin-url]: https://www.linkedin.com/in/alejandro-g-762869129/
-
 [![Version][version-shield]][version-url]
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
@@ -42,16 +26,16 @@ Have a Linux OS or Mac OS:
 
 Add "bin" directory to "~/bin", as link.
 
-```sh
-ln -s $PROJECT_PAHT/bin ~/bin
+```shell
+$ ln -s $PROJECT_PAHT/bin ~/bin
 ```
 
 This together with the previous steps will allow you to launch these scripts from your terminal at any time.
 
 Now keep the last version of both repos. When you are in myBin2 directory, use these script:
 
-```sh
-./updateAll.sh
+```shell
+$ ./updateAll.sh
 ```
 
 ## Bibliography ##
@@ -63,3 +47,19 @@ Now keep the last version of both repos. When you are in myBin2 directory, use t
 
 ## License ##
 * GNU V3 (see `LICENSE` for details)
+
+[version-shield]: https://img.shields.io/badge/version-1.0-blue?style=for-the-badge
+[contributors-shield]: https://img.shields.io/github/contributors/alejandrogm90/myBin2.svg?style=for-the-badge
+[forks-shield]: https://img.shields.io/github/forks/alejandrogm90/myBin2.svg?style=for-the-badge
+[stars-shield]: https://img.shields.io/github/stars/alejandrogm90/myBin2.svg?style=for-the-badge
+[issues-shield]: https://img.shields.io/github/issues/alejandrogm90/myBin2.svg?style=for-the-badge
+[license-shield]: https://img.shields.io/github/license/alejandrogm90/myBin2.svg?style=for-the-badge
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+
+[version-url]: https://github.com/alejandrogm90/myBin2/
+[contributors-url]: https://github.com/alejandrogm90/myBin2/graphs/contributors
+[forks-url]: https://github.com/alejandrogm90/myBin2/network/members
+[stars-url]: https://github.com/alejandrogm90/myBin2/stargazers
+[issues-url]: https://github.com/alejandrogm90/myBin2/issues
+[license-url]: https://github.com/alejandrogm90/myBin2/blob/master/LICENSE.txt
+[linkedin-url]: https://www.linkedin.com/in/alejandro-g-762869129/

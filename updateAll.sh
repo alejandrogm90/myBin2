@@ -1,9 +1,10 @@
 #!/bin/bash
 
 # Update GIT data
-git submodule sync
-git submodule update --init --recursive
-git submodule update --remote --merge
+#git submodule sync
+#git submodule update --init --recursive
+#git submodule update --remote --merge
+git submodule update --recursive --remote
 
 # Varables and functions
 DIR_HOME=$(cd `dirname $0` && pwd)
