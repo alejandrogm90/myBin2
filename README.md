@@ -12,7 +12,7 @@ It's a "bin" directory where I store very useful little scripts. Why does myBIN 
  - Because it is a great way to improve the possibilities that UNIX allows me.
  - Because this way these scripts can be improved, the base of others or help to create new ones.
 
-## Pre requirements ##
+## Pre requirements
 Read about submodules first:
  - python3_examples [Official Website](https://github.com/alejandrogm90/python3_examples/)
  - ssh_examples [Official Website](hhttps://github.com/alejandrogm90/ssh_examples/)
@@ -22,7 +22,7 @@ Have a Linux OS or Mac OS:
  - If this line ( PATH="$HOME/bin:$PATH" ) does not exist in your "~/.profile" file, add it.
  - python3.
 
-## Post-discharge ##
+## Post-discharge
 
 Add "bin" directory to "~/bin", as link.
 
@@ -38,15 +38,23 @@ Now keep the last version of both repos. When you are in myBin2 directory, use t
 $ ./updateAll.sh
 ```
 
-## Bibliography ##
+## Bibliography
 - Linux [Official Website](https://www.linux.org/)
 - Python [Official Website](https://www.pyhton.org/)
 
-## Community ##
+## Community
 - [x] [Alejandro Gómez](https://github.com/alejandrogm90) @alejandrogm90
 
-## License ##
+## License
 * GNU V3 (see `LICENSE` for details)
+
+<!--
+# Update GIT data
+git submodule sync
+git submodule update --init --recursive
+git submodule update --remote --merge
+git submodule update --recursive --remote
+-->
 
 [version-shield]: https://img.shields.io/badge/version-1.0-blue?style=for-the-badge
 [contributors-shield]: https://img.shields.io/github/contributors/alejandrogm90/myBin2.svg?style=for-the-badge
