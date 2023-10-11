@@ -27,7 +27,7 @@ Have a Linux OS or Mac OS:
 Add "bin" directory to "~/bin", as link.
 
 ```shell
-$ ln -s $PROJECT_PAHT/bin ~/bin
+ln -s $PROJECT_PAHT/bin ~/bin
 ```
 
 This together with the previous steps will allow you to launch these scripts from your terminal at any time.
@@ -35,7 +35,7 @@ This together with the previous steps will allow you to launch these scripts fro
 Now keep the last version of both repos. When you are in myBin2 directory, use these script:
 
 ```shell
-$ ./updateAll.sh
+./updateAll.sh
 ```
 
 ## Bibliography
@@ -54,6 +54,11 @@ git submodule sync
 git submodule update --init --recursive
 git submodule update --remote --merge
 git submodule update --recursive --remote
+-->
+
+<!-- 
+pip freeze > requirements.txt 
+pipreqs --force
 -->
 
 [version-shield]: https://img.shields.io/badge/version-1.0-blue?style=for-the-badge

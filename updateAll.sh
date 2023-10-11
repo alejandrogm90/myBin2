@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # Update GIT data
+git submodule update --recursive --init
 git submodule update --recursive --remote
 
 # Varables and functions
