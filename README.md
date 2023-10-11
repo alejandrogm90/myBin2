@@ -27,7 +27,7 @@ Have a Linux OS or Mac OS:
 Add "bin" directory to "~/bin", as link.
 
 ```shell
-ln -s $PROJECT_PAHT/bin ~/bin
+ln -s ~/MY_PROJECT_PATH/myBin2/bin ~/bin
 ```
 
 This together with the previous steps will allow you to launch these scripts from your terminal at any time.
@@ -35,7 +35,7 @@ This together with the previous steps will allow you to launch these scripts fro
 Now keep the last version of both repos. When you are in myBin2 directory, use these script:
 
 ```shell
-./updateAll.sh
+./update_modules.sh
 ```
 
 ## Bibliography
@@ -54,9 +54,7 @@ git submodule sync
 git submodule update --init --recursive
 git submodule update --remote --merge
 git submodule update --recursive --remote
--->
 
-<!-- 
 pip freeze > requirements.txt 
 pipreqs --force
 -->
