@@ -55,6 +55,9 @@ git submodule update --init --recursive
 git submodule update --remote --merge
 git submodule update --recursive --remote
 
+OMEN:~/Proyectos/myBin2$ cd python3_examples
+OMEN:~/Proyectos/myBin2/python3_examples$ git pull https://github.com/alejandrogm90/python3_examples main
+
 pip freeze > requirements.txt 
 pipreqs --force
 -->
