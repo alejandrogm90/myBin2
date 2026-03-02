@@ -32,7 +32,6 @@ echo "Copying SSH examples"
 cp -f "${DIR_HOME}/sh_examples/scripts/"*.sh "${MY_BIN2_LOCATION}/"
 echo "Copying Python3 examples"
 cp -f "${DIR_HOME}/python3_examples/src/"*.py "${MY_BIN2_LOCATION}/"
-cp -f "${DIR_HOME}/python3_examples/"*.conf "${MY_BIN2_LOCATION}/"
 
 # Add execution permissions
 chmod +x "${MY_BIN2_LOCATION}/"*.sh
